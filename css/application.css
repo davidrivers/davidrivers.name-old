@@ -39,6 +39,8 @@ dt:after {
 #doc3 {
   margin: 0; }
 
+em, h1 { font-style: oblique; }
+
 .email {
   direction: rtl;
   unicode-bidi: bidi-override; }
@@ -67,7 +69,6 @@ h1 {
   color: #e9e6e3;
   display: inline;
   font-size: 115%;
-  font-style: normal;
   left: 1.85em;
   margin-bottom: 0;
   position: relative;
