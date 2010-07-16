@@ -1,12 +1,10 @@
 a {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  background: #e9ecef;
+  border-bottom: 1px solid #dee;
   color: black;
-  padding: 2px;
   text-decoration: none; }
   a:hover {
-    border-bottom: 2px solid #ddd; }
+    border-color: #ddd;
+    border-width: 2px; }
   a img {
     border: 0; }
 
@@ -39,53 +37,56 @@ dt:after {
 #doc3 {
   margin: 0; }
 
-em, h1 { font-style: oblique; }
+em { font-style: oblique; }
 
 .email {
   direction: rtl;
   unicode-bidi: bidi-override; }
 
 #ft {
-  border-top: 5px solid #e6e6e6;
-  padding: 1.85em; }
-  #ft a {
-    border-bottom: 2px solid #ddd; }
+  border-top: 0.5em solid #e6e6e6;
+  padding: 0.5em 1.85em; }
+  #ft p {
+    margin: 0; }
 
 blockquote, dl, h1, h2, h3, h4, ol, p, ul {
   margin-bottom: 1em; }
 
 blockquote {
-  background: #f6f6f6;
-  border-left: 5px solid #d9d9d9;
-  padding: 1em; }
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-box-shadow: 0.5em 0.5em 3em #f0f0f0 inset;
+  -webkit-box-shadow: 0.5em 0.5em 3em #f0f0f0 inset;
+  padding: 0.75em; }
 
 blockquote p {
   margin: 0; }
 
 h1, h2, h3, h4 {
+  clear: both;
+  color: #666;
   font-weight: normal; }
 
 h1 {
-  color: #e9e6e3;
+  color: #ccc;
   display: inline;
-  font-size: 115%;
   left: 1.85em;
   margin-bottom: 0;
   position: relative;
   top: 0.675em; }
 
 h2 {
-  color: #666;
-  font-size: 135%; }
+  border-bottom: 3px dotted #eee;
+  font-size: 115%;
+  padding: 0.25em; }
 
 h3 {
-  color: #666666;
   font-size: 115%; }
 
 #hd {
   background: #000;
   border: 7px solid #595653;
-    border-bottom-width: 5px;
+    border-bottom-width: 0.5em;
     border-left: 0;
     border-right: 0;
   left: 0;
@@ -93,6 +94,8 @@ h3 {
   top: 0;
   width: 9999px;
   z-index: 2;}
+  #hd.obfuscated { opacity: 0.85; filter: alpha(opacity=85); -ms-filter: "alpha(opacity=85)"; }
+  #hd.obfuscated:hover { opacity: 1; filter: alpha(opacity=100); -ms-filter: "alpha(opacity=100)"; }
 
 #icons a {
   background: none;
@@ -102,7 +105,7 @@ h3 {
 #icons #blogroll {
   right: 1.1em; }
 #icons #feed {
-  right: 3.5em; }
+  right: 3.25em; }
 #icons img {
   height: 20px; }
 
@@ -114,7 +117,7 @@ li dt {
   float: left; }
   #nav .current, #nav .current:hover {
     background: white;
-    border: 5px solid #595653;
+    border: 0.5em solid #595653;
       border-bottom: 0;
       border-top: 0;
     color: #696663; }
@@ -126,27 +129,37 @@ li dt {
       background: none;
       border: 0;
       border-right: 2px solid #595653;
-      color: #f9f6f3;
+      color: #ccc;
       display: inline-block;
-      font-size: 115%;
       padding: 0.75em 1.85em;
       text-decoration: none; }
       #nav li a:hover {
-        background: #595653; }
+        background: #595653;
+        color: #eee; }
   #nav ul {
-    margin-bottom: -5px; }
+    margin-bottom: -0.5em; }
 
 .separator {
   color: #bbb; }
 
-.sidebar img {
-  width: 200px; }
+.sidebar {
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-box-shadow: 0.5em 0.5em 2em #f6f6f6 inset;
+  -webkit-box-shadow: 0.5em 0.5em 2em #f6f6f6 inset;
+  background: #f9f9f9;
+  padding: 1% !important;
+  width: 30% !important; }
 
-#twtr-widget-1 .twtr-bd, .twtr-tweet-wrap {
+#twtr-widget-1 .twtr-bd, .twtr-timeline, .twtr-tweet-wrap {
+  background: #f9f9f9 !important;
+  font: 100% Optima !important;
+  line-height: 115% !important;
   padding: 0 !important; }
 
 #twtr-widget-1 .twtr-tweet {
-  line-height: 135% !important;
+  border: 0 !important;
+  line-height: 115% !important;
   padding: 0.75em 0 !important; }
   #twtr-widget-1 .twtr-tweet a, #twtr-widget-1 .twtr-tweet a:hover {
     text-decoration: none !important; }
@@ -161,4 +174,4 @@ li dt {
 
 ul li {
   list-style-position: inside;
-  list-style-type: circle;
+  list-style-type: circle; }
