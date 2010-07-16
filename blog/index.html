@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog of David Rivers
+keywords: david rivers, weblog, blog, ruby, rails, front-end, development, web
+description: This weblog focuses on front-end Web development, Ruby on Rails, and user experience, among other miscellany.
+---
+
+<ul class="xoxo">
+{% for post in site.posts %} 
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <dl>
+      <dt>published date</dt>
+      <dd><abbr title="{{ post.date | date: "%Y%m%d" }}">{{ post.date | date_to_string }}</abbr></dd>
+    </dl>
+  </li>
+{% endfor %}
+</ul>

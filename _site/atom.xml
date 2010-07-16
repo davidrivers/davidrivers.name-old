@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>David Rivers, the Web Developer</title>
+ <link href="http://www.davidrivers.name/atom.xml" rel="self"/>
+ <link href="http://www.davidrivers.name/"/>
+ <updated>2010-07-15T23:27:05-04:00</updated>
+ <id>http://www.davidrivers.name/</id>
+ <author>
+   <name>David Rivers</name>
+   <email>david@dpg.me</email>
+ </author>
+
+ 
+ <entry>
+   <title>Yet Another Redesign of My Blog Site</title>
+   <link href="http://www.davidrivers.name/blog/2010/07/13/blog-site-redesign"/>
+   <updated>2010-07-13T00:00:00-04:00</updated>
+   <id>http://www.davidrivers.name/blog/2010/07/13/blog-site-redesign</id>
+   <content type="html">&lt;p&gt;Save blog entries about the redesigns themselves, I&amp;#8217;m pretty sure that I have deployed more versions of my site than I have published articles to it. Nevertheless, this is yet another blog about my blogsite redesign. (As soon as I implement a tagging system this will be promptly filed under &amp;#8220;who cares?&amp;#8221;.) This post will be updated with more details as I continue to the build out the site, improving user experience and posting more content&amp;#8230;&lt;/p&gt;
+
+&lt;h2 id='todo'&gt;TODO&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Improve layouts and design&lt;/li&gt;
+
+&lt;li&gt;Publish my portfolio&lt;/li&gt;
+
+&lt;li&gt;Load-time optimization (esp. &lt;a href='http://labjs.com/'&gt;LABjs&lt;/a&gt; or similar to defer loading of Disqus crap)&lt;/li&gt;
+
+&lt;li&gt;Write better content for the homepage&lt;/li&gt;
+
+&lt;li&gt;Generate a sitemap.xml&lt;/li&gt;
+
+&lt;li&gt;Implement a tagging system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ## Microformats
+
+xfn, hcard, hatom, rdfa
+
+## URL shortening
+
+/blog/redesign to /blog/2010/07/12/yet_another_blog_about_my_redesign
+--&gt;</content>
+ </entry>
+ 
+ 
+</feed>

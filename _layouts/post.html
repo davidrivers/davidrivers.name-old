@@ -1,0 +1,27 @@
+---
+  layout: default
+---
+
+<div class="hentry">
+
+<p>
+  <span class="entry-title">
+    <a rel="bookmark" href="{{ page.url }}"><em>{{ page.title }}</em></a>
+  </span>
+  published
+  <abbr class="published" title="{{ page.date | date: "%Y%m%d" }}">
+    {{ page.date | date_to_string }}
+  </abbr>
+  by
+  <span class="vcard">
+    <address class="author">
+      <a class="url fn" href="http://www.davidrivers.name/">David Rivers</a>
+    </address>
+  </span>
+</p>
+
+  <div id="article" class="entry-content">
+    {{ content }}
+  </div>
+
+</div>

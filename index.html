@@ -1,0 +1,27 @@
+---
+layout: home
+title: David Rivers, the Web Developer
+keywords: david rivers, front-end developer, ruby developer, rails developer
+description: This personal site and weblog of David Rivers focuses on front-end Web development, Ruby on Rails, and user experience, among other miscellany.
+---
+
+<div style="-moz-border-radius: 3px; -webkit-border-radius: 3px; float: left; padding:0.5em; margin: 0 1em 1em 0; width: 126px;">
+  <img src="http://userserve-ak.last.fm/serve/126/12044189.jpg" alt="David Rivers"/>
+  <p style="color: #666; font-size: 85%; font-style: italic; margin-top: 0.5em;">This photo ostensibly proves I am not a robot.</p>
+</div>
+
+<p>I am <a rel="tag" href="http://www.davidrivers.name/">David Rivers</a>, a Web developer by trade, and this is my personal site and weblog. I host my <a href="/portfolio">portfolio</a> and publish <a href="/blog">blogs</a> here. By the off chance you hire front-end or Ruby on Rails talent, you may want to know that I have been called an "extremely creative" and "intelligent" Web developer, <a href="/portfolio#recommendations" title="Recommendations for David Rivers">among other things</a>.</p>
+
+<h2>Recent Blogs</h2>
+
+<ul class="xoxo">
+{% for post in site.posts %} 
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <dl>
+      <dt><abbr title="publish date">published</abbr></dt>
+      <dd><abbr title="{{ post.date | date: "%Y%m%d" }}">{{ post.date | date_to_string }}</abbr></dd>
+    </dl>
+  </li>
+{% endfor %}
+</ul>

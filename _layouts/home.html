@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head profile='http://gmpg.org/xfn/11 http://microformats.org/profile/hcard'>
+    <title>{{ page.title }}</title>
+    <meta content='{{ page.keywords }}' name='keywords' />
+    <meta content='{{ page.description }}' name='description' />
+    <link href="/css/meyer-reset.1.0.css" media="all" rel="stylesheet" type="text/css"/><link href="/css/yui-fonts.3.1.1.47-min.css" media="all" rel="stylesheet" type="text/css"/><link href="/css/yui-grids.2.8.1-min.css" media="all" rel="stylesheet" type="text/css"/><link href="/css/application.css" media="all" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div id='doc3'>
+      <div id='hd'>
+        <div id='nav'>
+          <ul>
+            <li><a style="border-left: 0;" {% if page.url == '/index.html'] %} class="current" {% endif %} href="/">About</a></li><li><a {% if page.url contains '/blog/' %} class="current" {% endif %} href="/blog">Blog</a></li><li><a {% if page.url contains '/portfolio/' %} class="current" {% endif %} href="/portfolio">Portfolio</a></li><li><a {% if page.url contains '/contact/' %} class="current" {% endif %} href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <h1>{{ page.title }}</h1>
+        <div id='icons'>
+          <a id="feed" title="Atom feed" href="/atom.xml"><img src="/img/feed-icon-28x28.png" alt="Atom Feed"/></a>
+          <a id="blogroll" title="Blogroll" href="/blogroll"><img src="/img/link_24x24.png" alt="Links"/></a>
+        </div>
+      </div>
+      <div id='bd'>
+        <div class="yui-gc">
+          <div class="yui-u first">
+            {{ content }}
+          </div>
+          <div class="yui-u">
+            <h2 style="margin-bottom: 0;">Recent Tweets</h2>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 6000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#ffffff',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#000000'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('ideogon').start();
+</script>
+
+
+            <div id="recentcomments" class="dsq-widget"><h2 class="dsq-widget-title">Recent Comments</h2><script type="text/javascript" src="http://disqus.com/forums/davidrivers/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=32&excerpt_length=200"></script></div>
+          </div>
+        </div>
+      </div>
+      <div id='ft'>
+        <p><a rel="copyright" href="/license">&copy;</a> 2007 - 2010, David Rivers, <a rel="address nofollow" href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=25+True+Rd+Stafford+VA+22556&mrt=all&ie=UTF8&hq=&hnear=25+True+Rd,+Stafford,+Virginia+22556&t=h&z=16">Near Washington, DC</a> <span class="separator">//</span> <span class="email recipient to_em.gpd@divad">liamE</span> <span class="separator">//</span> <a href="http://github.com/DavidRivers">GitHub</a> <span class="separator">//</span> <a href="http://stackoverflow.com/users/224192/david-rivers">Stack Overflow</a> <span class="separator">//</span> <a href="http://www.linkedin.com/in/davidrivers">LinkedIn</a> <span class="separator">//</span> <a href="http://twitter.com/ideogon">Twitter</a></p>
+      </div>
+    </div>
+    <script language="javascript" src="/js/jquery-1.4.2.js" type="text/javascript"></script><script language="javascript" src="/js/application.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = 'davidrivers';
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'http://disqus.com/forums/davidrivers/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  </script>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1908395-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>  
+  </body>
+</html>

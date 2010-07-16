@@ -1,0 +1,5 @@
+permalink:   /blog/:year/:month/:day/:title
+auto:        true
+lsi:         true
+pygments:    true
+markdown:    maruku
