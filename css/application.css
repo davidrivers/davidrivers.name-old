@@ -55,8 +55,10 @@ blockquote, dl, h1, h2, h3, h4, ol, p, ul {
 blockquote {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
   -moz-box-shadow: 0.5em 0.5em 3em #f0f0f0 inset;
   -webkit-box-shadow: 0.5em 0.5em 3em #f0f0f0 inset;
+  box-shadow: 0.5em 0.5em 3em #f0f0f0 inset;
   padding: 0.75em; }
 
 blockquote p {
@@ -84,6 +86,8 @@ h3 {
   font-size: 115%; }
 
 #hd {
+
+  
   background: #000;
   border: 7px solid #595653;
     border-bottom-width: 0.5em;
@@ -126,7 +130,10 @@ li dt {
     #nav li a {
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
-      background: none;
+      border-radius: 0;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595653', endColorstr='#292623'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#595653), to(#292623)); /* for webkit browsers */
+background: -moz-linear-gradient(center top , #595653, #292623) repeat scroll 0 0 transparent;
       border: 0;
       border-right: 2px solid #595653;
       color: #ccc;
@@ -145,8 +152,10 @@ li dt {
 .sidebar {
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
   -moz-box-shadow: 0.5em 0.5em 2em #f6f6f6 inset;
   -webkit-box-shadow: 0.5em 0.5em 2em #f6f6f6 inset;
+  box-shadow: 0.5em 0.5em 2em #f6f6f6 inset;
   background: #f9f9f9;
   padding: 1% !important;
   width: 30% !important; }
