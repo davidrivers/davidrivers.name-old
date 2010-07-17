@@ -1,0 +1,54 @@
+---
+rooturl: http://www.davidrivers.name
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>http://www.davidrivers.naem/sitemap.xml.gz</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+   </sitemap>
+   <url>
+      <loc>http://www.davidrivers.name/</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1</priority>
+   </url>
+   <url>
+      <loc>http://www.davidrivers.name/blog</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://www.davidrivers.name/portfolio</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://www.davidrivers.name/contact</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>http://www.davidrivers.name/license</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.4</priority>
+   </url>
+   <url>
+      <loc>http://www.davidrivers.name/atom.xml</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.6</priority>
+   </url>
+{% for post in site.posts %}
+   <url>
+      <loc>{{ page.rooturl }}{{ post.url }}</loc>
+      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+   </url>
+{% endfor %}
+</urlset>
