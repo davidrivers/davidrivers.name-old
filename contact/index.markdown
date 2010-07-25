@@ -15,8 +15,9 @@ description: Contact information for David Rivers, the Web developer.
     ,
     <span class='postal-code'>22556</span>
     <span class='country-name'>USA</span>
+    (<a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=25+True+Rd+Stafford+VA+22556&amp;mrt=all&amp;ie=UTF8&amp;hq=&amp;hnear=25+True+Rd,+Stafford,+Virginia+22556&amp;t=h&amp;z=16" rel="address nofollow" class="adr region">near <span class="locality">Washington, DC</span></a>)
   </div>
-  <div class='tel'>(703) 907-9095</div>
+  <div class='tel'>703-907-9095</div>
   <div class='tags'>
     <a href='http://kitchen.technorati.com/contacts/tag/front-end'>front-end</a>
     <a href='http://kitchen.technorati.com/contacts/tag/ruby'>ruby</a>
